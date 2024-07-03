@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: rgb(185, 235, 248);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  width: 100%;
+}
+
+.Hero {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.Hero-Body {
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  width: 100%;
+  max-width: 768px;
+  height: max-content;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.imgwrap {
+  display: flex;
+  width: max-content;
+  height: max-content;
+}
+
+.imgwrap div {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.Content-Two {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: max-content;
+}
+
+.Content-Two h1 {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.Content-Two div h3 {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.Content-Two div h3 span {
+  font-size: 1rem;
+  font-weight: normal;
+}
+.Content-Two div h3 a {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.Content-Two div p {
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 2rem 0;
+    height: unset;
+  }
+
+  .Hero {
+    display: block;
+    width: unset;
+    height: max-content;
+    padding: 2rem;
+    align-items: unset;
+    justify-content: unset;
+  }
+  .Hero-Body {
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+    
+}
